@@ -1,0 +1,67 @@
+[2025-10-16 13:09:58] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:10:41] HTTP: Incoming Request {"method":"GET","url":"/api/v1/products","status":401,"content_length":"49","response_time":59.526,"response_time_ms":"59.526 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:10:41 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:17:43] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:17:50] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:17:52] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:17:54] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:18:10] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:22:12] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:23:00] HTTP: Auth failed: no token provided 
+[2025-10-16 13:23:00] HTTP: Incoming Request {"method":"GET","url":"/api/v1/products","status":401,"content_length":"49","response_time":87.185,"response_time_ms":"87.185 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:23:00 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:29:01] HTTP: Incoming Request {"method":"POST","url":"/api/v1/auth/customer/register","status":201,"content_length":"542","response_time":432.071,"response_time_ms":"432.071 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:29:01 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:31:05] HTTP: Incoming Request {"method":"POST","url":"/api/v1/auth/customer/login","status":200,"content_length":"542","response_time":146.382,"response_time_ms":"146.382 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:31:05 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:31:52] HTTP: Incoming Request {"method":"GET","url":"/api/v1/auth/products","status":404,"content_length":159,"response_time":8.732,"response_time_ms":"8.732 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:31:52 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:34:21] HTTP: Incoming Request {"method":"POST","url":"/api/v1/auth/staff/register","status":201,"content_length":"533","response_time":174.831,"response_time_ms":"174.831 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:34:21 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:40:17] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:40:58] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:41:00] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:42:44] HTTP: Incoming Request {"method":"POST","url":"/api/v1/auth/admin/register","status":201,"content_length":"568","response_time":180.083,"response_time_ms":"180.083 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:42:44 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:43:41] HTTP: Incoming Request {"method":"POST","url":"/api/v1/auth/admin/login","status":200,"content_length":"568","response_time":132.943,"response_time_ms":"132.943 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:43:41 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:47:53] HTTP: Auth failed: no token provided 
+[2025-10-16 13:47:53] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":401,"content_length":"49","response_time":2.554,"response_time_ms":"2.554 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:47:53 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:48:20] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":500,"content_length":1668,"response_time":47.89,"response_time_ms":"47.890 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:48:20 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:48:56] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:50:10] HTTP: Incoming Request {"method":"POST","url":"/api/v1/auth/products","status":404,"content_length":160,"response_time":1.779,"response_time_ms":"1.779 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:50:10 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:50:20] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":500,"content_length":1668,"response_time":7.871,"response_time_ms":"7.871 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:50:20 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:50:32] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":500,"content_length":1668,"response_time":2.414,"response_time_ms":"2.414 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:50:32 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:53:05] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:53:25] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:53:48] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:54:10] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 13:54:13] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":500,"content_length":"22","response_time":106.634,"response_time_ms":"106.634 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:54:13 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:55:56] HTTP: Auth failed: no token provided 
+[2025-10-16 13:55:56] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":401,"content_length":"49","response_time":2.567,"response_time_ms":"2.567 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:55:56 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:56:06] HTTP: Incoming Request {"method":"POST","url":"/api/v1/auth/admin/login","status":200,"content_length":"568","response_time":206.017,"response_time_ms":"206.017 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:56:06 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:56:18] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":500,"content_length":"22","response_time":27.337,"response_time_ms":"27.337 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:56:18 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:56:28] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":500,"content_length":"22","response_time":31.241,"response_time_ms":"31.241 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 02:56:28 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 13:57:49] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 14:03:51] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 14:04:10] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 14:04:43] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 14:06:01] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 14:06:39] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":500,"content_length":"22","response_time":108.093,"response_time_ms":"108.093 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 03:06:39 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 14:06:44] HTTP: Incoming Request {"method":"POST","url":"/api/v1/auth/admin/login","status":200,"content_length":"568","response_time":132.991,"response_time_ms":"132.991 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 03:06:44 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 14:06:55] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":500,"content_length":"22","response_time":30.599,"response_time_ms":"30.599 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 03:06:55 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 14:09:02] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 14:09:14] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 14:09:21] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":500,"content_length":"22","response_time":103.766,"response_time_ms":"103.766 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 03:09:21 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 14:11:22] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 14:11:37] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 14:11:56] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":500,"content_length":"22","response_time":87.171,"response_time_ms":"87.171 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 03:11:56 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 14:12:51] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 14:13:18] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 14:13:25] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":500,"content_length":"22","response_time":99.771,"response_time_ms":"99.771 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 03:13:25 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 14:13:51] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 14:13:58] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-16 14:14:05] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":201,"content_length":"138","response_time":72.345,"response_time_ms":"72.345 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 03:14:05 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 14:16:19] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":201,"content_length":"135","response_time":36.094,"response_time_ms":"36.094 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 03:16:19 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 14:16:28] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":201,"content_length":"134","response_time":31.003,"response_time_ms":"31.003 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 03:16:28 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 14:16:49] HTTP: Incoming Request {"method":"POST","url":"/api/v1/products","status":400,"content_length":"271","response_time":12.09,"response_time_ms":"12.090 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 03:16:49 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-16 14:17:07] HTTP: Incoming Request {"method":"GET","url":"/api/v1/products","status":200,"content_length":"411","response_time":17.743,"response_time_ms":"17.743 ms","remote_address":"::1","date":"Thu, 16 Oct 2025 03:17:07 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-19 15:20:37] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-19 15:23:40] HTTP: Incoming Request {"method":"GET","url":"/api/v1/products","status":200,"content_length":"411","response_time":156.652,"response_time_ms":"156.652 ms","remote_address":"::1","date":"Sun, 19 Oct 2025 04:23:40 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-19 15:33:13] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-19 15:36:57] INFO: ✅ Server is running on http://localhost:3001 
+[2025-10-19 15:37:11] HTTP: Incoming Request {"method":"GET","url":"/api/v1/products","status":200,"content_length":"411","response_time":51.716,"response_time_ms":"51.716 ms","remote_address":"::1","date":"Sun, 19 Oct 2025 04:37:11 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-19 15:37:32] HTTP: Incoming Request {"method":"POST","url":"/api/v1/auth/admin/login","status":200,"content_length":"568","response_time":114.651,"response_time_ms":"114.651 ms","remote_address":"::1","date":"Sun, 19 Oct 2025 04:37:32 GMT","http_version":"1.1","user_agent":"PostmanRuntime/7.48.0"}
+[2025-10-19 15:57:52] INFO: ✅ Server is running on http://localhost:3001 
