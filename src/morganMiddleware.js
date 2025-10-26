@@ -1,81 +1,49 @@
-// File: src/morganMiddleware.js
-// -------------------------------------------
-// This middleware combines Morgan (HTTP request logger)
-// with Winston (our main logger) to create structured,
-// JSON-formatted logs for every incoming HTTP request.
-// -------------------------------------------
+/**
+ * Morgan HTTP Request Logger Middleware
+ * Integrates Morgan with Winston to log HTTP requests in JSON format
+ * Captures detailed request/response information for each API call
+ */
 
-// Import the morgan HTTP logger library
 const morgan = require('morgan');
-// Import our custom Winston logger instance
 const logger = require('./logger');
 
-// -------------------------------------------
-// Define a custom Morgan format that outputs JSON.
-// Each request log will contain detailed info about
-// the request and response such as method, URL, status,
-// response time, and user-agent.
-// -------------------------------------------
+/**
+ * Morgan middleware with custom JSON format
+ * Logs all incoming HTTP requests with detailed metadata
+ * Streams output to Winston logger at 'http' level
+ */
 const morganMiddleware = morgan(
+  // Custom format function - returns JSON string with request details
   function (tokens, req, res) {
-    // Return the request/response details as a JSON string
     return JSON.stringify({
-      // HTTP method used (GET, POST, PUT, DELETE)
-      method: tokens.method(req, res),
-
-      // The requested URL path
-      url: tokens.url(req, res),
-
-      // Numeric status code returned by the response
-      status: Number.parseFloat(tokens.status(req, res)),
-
-      // Size of the response (in bytes)
-      content_length: tokens.res(req, res, 'content-length'),
-
-      // Total response time (in ms, as a number)
-      response_time: Number.parseFloat(tokens['response-time'](req, res)),
-
-      // Response time formatted as text with "ms"
-      response_time_ms: tokens['response-time'](req, res) + ' ms',
-
-      // IP address of the client making the request
-      remote_address: tokens['remote-addr'](req, res),
-
-      // Authenticated username if available (usually blank)
-      remote_user: tokens['remote-user'](req, res),
-
-      // Date and time of the request
-      date: tokens.date(req, res),
-
-      // HTTP protocol version (e.g., 1.1 or 2.0)
-      http_version: tokens['http-version'](req, res),
-
-      // Browser or tool that sent the request
-      user_agent: tokens['user-agent'](req, res),
-
-      // The "referrer" header (where the request came from)
-      referrer: tokens.referrer(req, res),
+      method: tokens.method(req, res),                              // HTTP method (GET, POST, etc.)
+      url: tokens.url(req, res),                                    // Request URL path
+      status: Number.parseFloat(tokens.status(req, res)),           // Response status code
+      content_length: tokens.res(req, res, 'content-length'),       // Response size in bytes
+      response_time: Number.parseFloat(tokens['response-time'](req, res)), // Response time (ms)
+      response_time_ms: tokens['response-time'](req, res) + ' ms',  // Response time formatted
+      remote_address: tokens['remote-addr'](req, res),              // Client IP address
+      remote_user: tokens['remote-user'](req, res),                 // Authenticated user (if any)
+      date: tokens.date(req, res),                                  // Request timestamp
+      http_version: tokens['http-version'](req, res),               // HTTP protocol version
+      user_agent: tokens['user-agent'](req, res),                   // Client browser/tool
+      referrer: tokens.referrer(req, res),                          // Referrer header
     });
   },
   {
-    // -------------------------------------------
-    // Define how Morgan should output (stream) the logs.
-    // Instead of writing to the console, we send the log
-    // data directly into Winston for advanced handling.
-    // -------------------------------------------
+    // Stream configuration - send logs to Winston instead of console
     stream: {
-      // "write" is called every time Morgan creates a log entry
+      /**
+       * Write function called by Morgan for each request
+       * @param {string} message - JSON string with request data
+       */
       write: (message) => {
-        // Convert the JSON string (from above) into an object
+        // Parse JSON and log through Winston at 'http' level
         const data = JSON.parse(message);
-
-        // Log it using Winston at the "http" level
-        // so it can be filtered separately from app logs.
         logger.http('Incoming Request', data);
       },
     },
   }
 );
 
-// Export the middleware so we can use it in server.js
 module.exports = morganMiddleware;
